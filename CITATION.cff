@@ -10,7 +10,8 @@ repository-code: "https://github.com/aiam-nano/probatio"
 url: "https://github.com/aiam-nano/probatio"
 abstract: "Probatio (skill id manuscript-review) is an Agent Skill that reviews a scientific manuscript the user owns: five criterion-targeted passes, an adversarial pass with a steelman filter, claim verification against the whole manuscript, and a pre-delivery integrity gate. It produces an author-facing prose report and a complete findings list, each finding anchored to a verbatim quotation, and supports successive review rounds."
 version: 1.0.0
-date-released: 2026-10-17
+doi: 10.5281/zenodo.23540018
+date-released: 2026-10-21
 license: MIT
 keywords:
   - peer-review

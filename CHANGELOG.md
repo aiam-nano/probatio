@@ -2,7 +2,7 @@
 
 All notable changes to this skill are recorded here. Versions follow [semantic versioning](https://semver.org/): a minor release adds a capability, a patch release fixes behaviour without adding one.
 
-## 1.0.0 (2026-10-17)
+## 1.0.0 (2026-10-21)
 
 First public release, for public testing and feedback.
 

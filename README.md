@@ -1,5 +1,7 @@
 # Probatio
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23540017.svg)](https://doi.org/10.5281/zenodo.23540017)
+
 *Latin: a testing, a proof.* An agent skill that reviews your own scientific manuscript before the referees do.
 
 Give it the PDF of a draft. You get two documents:
@@ -301,6 +303,6 @@ This is a good-faith record, not legal advice. Check the sources before relying 
 
 [MIT](LICENSE), with the attribution notice in `LICENSE`. Copyright (c) 2026 Aravind Vijayaraghavan.
 
-If the review contributes to your work, an acknowledgement is welcome. To cite the skill, use [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button) or the Zenodo DOI of the release.
+If the review contributes to your work, an acknowledgement is welcome. To cite the skill, use [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button) or a Zenodo DOI: [10.5281/zenodo.23540018](https://doi.org/10.5281/zenodo.23540018) for version 1.0.0, or [10.5281/zenodo.23540017](https://doi.org/10.5281/zenodo.23540017) for all versions (it always resolves to the latest).
 
 **Skills run in your agent's environment.** Read `SKILL.md` and the files beside it before installing this or any other skill.
