@@ -1,0 +1,13 @@
+# Backstop only: nothing confidential belongs in this repository.
+*.pdf
+*.docx
+*.doc
+*-findings.md
+*-review.md
+!manuscript-review/**
+scratch/
+review-work/
+dist/
+__pycache__/
+.DS_Store
+Thumbs.db

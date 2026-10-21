@@ -1,0 +1,11 @@
+{
+  "title": "Probatio: an agent skill for rigorous review of your own scientific manuscripts",
+  "upload_type": "software",
+  "description": "<p>Probatio (skill id <code>manuscript-review</code>) is an Agent Skill that reviews a scientific manuscript the user owns. It runs five criterion-targeted passes, an adversarial pass with a steelman filter, claim verification against the whole manuscript, and a pre-delivery integrity gate, and produces an author-facing prose report and a complete findings list, each finding anchored to a verbatim quotation. It supports successive review rounds. Released for public testing.</p>",
+  "creators": [
+    {"name": "Vijayaraghavan, Aravind", "affiliation": "University of Manchester"}
+  ],
+  "license": "MIT",
+  "keywords": ["peer review", "pre-submission review", "scientific writing", "agent skills", "research integrity", "manuscript review"],
+  "access_right": "open"
+}

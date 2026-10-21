@@ -1,0 +1,29 @@
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        General feedback on the skill is welcome here. **Never paste text from an unpublished manuscript.**
+  - type: input
+    id: model
+    attributes:
+      label: Model and harness
+      placeholder: "Claude Opus 5.5, Claude app"
+  - type: dropdown
+    id: field
+    attributes:
+      label: Your field
+      options: ["Materials science", "Chemistry", "Physics", "Engineering", "Life sciences", "Medicine", "Earth and environmental sciences", "Computer science", "Mathematics", "Social sciences", "Other"]
+  - type: dropdown
+    id: useful
+    attributes:
+      label: Overall, was the review useful?
+      options: ["Very useful", "Somewhat useful", "Not useful"]
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: What worked, what did not, and what you would change.
+    validations:
+      required: true

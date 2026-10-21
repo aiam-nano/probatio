@@ -1,0 +1,54 @@
+name: Bug or harness problem
+description: The skill did not load, did not write its files, broke a rule of its own output, or misbehaved in a particular tool.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public: never paste text from an unpublished manuscript.** Error messages, the skill's own scope block and summary lines are fine to paste.
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and harness, with versions
+      placeholder: "Gemini 4 Argon, Gemini desktop app 2.x"
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: How the skill was installed
+      placeholder: "Uploaded the release zip in Settings > Skills"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - The skill did not load or was not used
+        - The two files were not written, or only in chat
+        - A quotation is not in the paper
+        - The output broke its own format (labels, scaffolding, length, closing note)
+        - Review rounds were mishandled
+        - The PDF or a figure could not be read
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: The findings list's scope block (optional)
+      description: The lines under "Scope of this review". These describe the run, not the paper.
+      render: markdown

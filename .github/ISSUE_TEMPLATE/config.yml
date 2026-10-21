@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General feedback, questions and model experience
+    url: https://github.com/aiam-nano/probatio/discussions
+    about: Use Discussions for anything that is not a specific false finding, missed problem or bug.
+  - name: Security report (private)
+    url: https://github.com/aiam-nano/probatio/security/advisories/new
+    about: Prompt injection, query disclosure or anything that makes the skill act against the user.

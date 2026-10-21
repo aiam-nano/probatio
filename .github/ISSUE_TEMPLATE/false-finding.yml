@@ -1,0 +1,69 @@
+name: False finding
+description: The review says something is wrong that is not.
+title: "[False finding] "
+labels: ["false-finding", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. **Issues are public: never paste text from an unpublished manuscript.** Describe the finding and why it is wrong in your own words. If the manuscript is published or a public preprint, you may link it and quote it.
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality
+      options:
+        - label: This report contains no text, figures or data from an unpublished manuscript (or the manuscript is public and linked below).
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: The version named in the review's closing note.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and harness
+      description: The model, its effort or reasoning setting if shown, and the app or agent with its version.
+      placeholder: "Claude Opus 5.5, Claude app (desktop)"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of finding was it?
+      options:
+        - A value or statement misread from the text
+        - A value misread from a figure or table
+        - An arithmetic or unit check that was wrong
+        - Something said to be missing that is present
+        - A claim about prior work or outside knowledge
+        - A judgement I disagree with (not a factual error)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: The severity it was given
+      options: ["critical", "major", "minor", "not shown"]
+  - type: dropdown
+    id: verification
+    attributes:
+      label: How the findings list marked it
+      description: Its `Check` or `Verified by` line, if you can see one.
+      options: ["confirmed", "question", "outside knowledge", "not recorded", "not sure"]
+  - type: textarea
+    id: what
+    attributes:
+      label: What the finding said, and why it is wrong
+      description: In your own words. Say where in the paper the answer is (section, figure, table), without quoting unpublished text.
+    validations:
+      required: true
+  - type: input
+    id: public
+    attributes:
+      label: Public link (optional)
+      description: If the paper is published or a public preprint, its DOI or URL.

@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+title: "Probatio: an agent skill for rigorous review of your own scientific manuscripts"
+message: "If you use this skill in published work, please cite it using these metadata, and the sources listed in the README's Sources and credits section."
+type: software
+authors:
+  - given-names: Aravind
+    family-names: Vijayaraghavan
+    affiliation: "University of Manchester"
+repository-code: "https://github.com/aiam-nano/probatio"
+url: "https://github.com/aiam-nano/probatio"
+abstract: "Probatio (skill id manuscript-review) is an Agent Skill that reviews a scientific manuscript the user owns: five criterion-targeted passes, an adversarial pass with a steelman filter, claim verification against the whole manuscript, and a pre-delivery integrity gate. It produces an author-facing prose report and a complete findings list, each finding anchored to a verbatim quotation, and supports successive review rounds."
+version: 1.0.0
+date-released: 2026-10-17
+license: MIT
+keywords:
+  - peer-review
+  - pre-submission-review
+  - scientific-writing
+  - agent-skills
+  - research-integrity
+  - manuscript-review
+references:
+  - type: article
+    title: "AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot"
+    authors:
+      - name: "Biswas, J., et al."
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2604.13940"
+    notes: "Multi-author; see the arXiv listing for the full author list."
+  - type: software
+    title: "paper-skills: deep pre-submission review and grounded drafting for scientific manuscripts"
+    authors:
+      - name: "whoisraibolt"
+    year: 2026
+    doi: "10.5281/zenodo.21982661"
+    repository-code: "https://github.com/whoisraibolt/paper-skills"
+    notes: "Author name not verified; see the Zenodo deposit for the name of record."
+  - type: article
+    title: "Can LLM feedback enhance review quality? A randomized study of 20K reviews at ICLR 2025"
+    authors:
+      - name: "Authors of arXiv:2504.09737"
+    year: 2025
+    identifiers:
+      - type: other
+        value: "arXiv:2504.09737"
+  - type: article
+    title: "Development of the review quality instrument (RQI) for assessing peer reviews of manuscripts"
+    authors:
+      - family-names: van Rooyen
+        given-names: Susan
+      - family-names: Black
+        given-names: Nick
+      - family-names: Godlee
+        given-names: Fiona
+    year: 1999
+    journal: "Journal of Clinical Epidemiology"
+    volume: 52
+    issue: 7
+    start: 625
+    end: 629

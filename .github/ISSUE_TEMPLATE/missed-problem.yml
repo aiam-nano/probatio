@@ -1,0 +1,66 @@
+name: Missed problem
+description: Something a referee raised, or you found, that the review did not.
+title: "[Missed] "
+labels: ["missed-problem", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. **Issues are public: never paste text from an unpublished manuscript or from a confidential referee report.** Describe the problem in your own words. One review is one pass, not a census, so misses are expected; the useful reports are the ones that show a pattern.
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality
+      options:
+        - label: This report contains no text from an unpublished manuscript or a confidential referee report (or the material is public and linked below).
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and harness
+      placeholder: "Claude Sonnet 5.5, Cursor 3.x"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem was missed?
+      options:
+        - Text disagrees with a figure
+        - Text disagrees with a table, caption or the SI
+        - Arithmetic, units or an equation
+        - A claim the evidence does not support
+        - Missing method detail, control or statistic
+        - Prior work or novelty
+        - Significance or interpretation
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Who found it?
+      options: ["A referee", "An editor", "A co-author or colleague", "Me", "Another AI tool", "Other"]
+  - type: dropdown
+    id: si
+    attributes:
+      label: Was the supplementary information supplied with the PDF?
+      options: ["Yes", "No, the paper has none", "No, it was not attached", "Not sure"]
+  - type: textarea
+    id: what
+    attributes:
+      label: The problem, in your own words
+      description: Where it is (section, figure, table) and why it matters.
+    validations:
+      required: true
+  - type: input
+    id: public
+    attributes:
+      label: Public link (optional)
